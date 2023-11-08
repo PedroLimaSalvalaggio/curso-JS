@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Nacionalidade</title>
+</head>
+<body>
+
+    <h1>Alfendega</h1>
+    Digite qual é o país que você nasceu: <input type="text" nome="pais" id="pais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="resposta">
+
+    </div>
+    <script>
+        function verificar() {
+        var p = window.document.getElementById('pais').value
+        var res = window.document.getElementById('resposta')   
+        if (p == "Brasil"){
+            res.innerHTML = `Você é <strong>brasileiro</strong>`
+            }
+        else{
+            res.innerHTML = `Você é <strong>estrangeiro</strong>`
+            }
+        }
+    </script>
+</body>
+</html>
